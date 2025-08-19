@@ -1,103 +1,80 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #fdf6f0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
   color: #333;
 }
 
-header {
-  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
   text-align: center;
-  padding: 60px 20px;
 }
 
 .profile-pic {
-  width: 140px;
+  width: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
-}
-
-.tagline {
-  font-style: italic;
-  font-size: 1.2em;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.project-card {
-  background: #fff;
-  border-left: 5px solid #ee9ca7;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.resume-line {
-  font-weight: bold;
-}
-
-.subtext {
-  font-style: italic;
-  color: #555;
-}
-
-.artwork-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.art-tile {
-  background: #eee;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: italic;
-}
-
-form {
+.center {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-input, textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  background: #ee9ca7;
+.nav-btn {
+  padding: 15px 25px;
+  font-size: 18px;
   border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.footer-quote {
-  margin-top: 20px;
-  font-style: italic;
-  text-align: center;
+.nav-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.right {
+  flex: 2;
+  padding: 20px;
+}
+
+.info-panel {
+  font-size: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  min-height: 150px;
+  transition: all 0.3s ease;
+}
+
+.timeline {
+  margin-top: 30px;
+  border-left: 3px solid #333;
+  padding-left: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.timeline-entry {
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
