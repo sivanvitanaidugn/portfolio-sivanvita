@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sivanvita | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="your-photo.jpeg" alt="Sivanvita" class="profile-pic" />
+      <h1>Sivanvita</h1>
+      <p class="tagline">Where code meets soul. Where pixels speak poetry.</p>
+      <a href="#projects" class="btn">Explore Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Software Engineer with a poetic heart. I build systems, but I also build stories.
+    </p>
+    <ul class="highlights">
+      <li>2 years as an SDE</li>
+      <li>Passion for expressive design & narrative-driven layouts</li>
+      <li>ML school project as a turning point</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>SMTP & IMAP Mail Client</h3>
+      <p class="resume-line">
+        Built a GUI-based email client using SMTP/IMAP protocols, reducing manual testing time by 30%.
+      </p>
+      <p class="subtext">“I didn’t think I could build a mail client. Then I did.”</p>
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section id="gallery">
+    <h2>Art & Code Fusion</h2>
+    <p>Hover over each piece to reveal its story.</p>
+    <!-- Placeholder for artwork -->
+    <div class="artwork-grid">
+      <div class="art-tile">Your artwork here</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p class="footer-quote">“Every byte I write carries a beat of my heart.”</p>
+  </section>
+</body>
+</html>
